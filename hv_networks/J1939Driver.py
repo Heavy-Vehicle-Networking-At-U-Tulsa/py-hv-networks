@@ -19,7 +19,7 @@ import socket
 import time
 
 class J1939Driver():
-    def __init__(self, my_sa=0xF9, interface='can0'):
+    def __init__(self, my_sa=0xF9, interface='can1'):
         self.my_sa = my_sa
         self.interface = interface
         self.can_socket = socket.socket(socket.PF_CAN, socket.SOCK_DGRAM,
